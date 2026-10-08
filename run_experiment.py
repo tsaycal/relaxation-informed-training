@@ -19,7 +19,7 @@ Options:
     --depth        number of hidden layers (2, 3, or 5 in the paper), width 25
     --regularizer  none | l1 | l2 | bound_width | stable_neuron | lp_gap | bw+lp
     --lam          regularization weight lambda (paper: 1e-4, 1e-3, 1e-2)
-    --seed         random seed (paper: 0, ..., 19)
+    --seed         random seed
 """
 
 import os
