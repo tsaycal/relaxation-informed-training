@@ -32,8 +32,6 @@ The paper reports means over 20 seeds for each combination. Runs are independent
 
 Results (a `results.json` with training and MILP metrics, plus the trained `model.pt`) are written to `results/<benchmark>/<architecture>/<regularizer>/seed_<seed>/`.
 
-Settings used in the paper (defined at the top of `run_experiment.py`): 70,000 training / 30,000 validation / 10,000 test samples drawn by Latin hypercube sampling; 200 epochs of Adam (learning rate 1e-3, batch size 64), retaining the parameters with the lowest validation loss; 8 LP solves per mini-batch for the LP-based regularizers; and a 1800 s MILP time limit.
-
 ## Files
 
 | File | Description |
