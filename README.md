@@ -23,10 +23,10 @@ python run_experiment.py --benchmark peaks --depth 3 --regularizer bound_width -
 | Option | Values |
 |--------|--------|
 | `--benchmark` | `peaks`, `himmelblau`, `ackley` (2-dimensional) |
-| `--depth` | number of hidden layers, each with 25 neurons (2, 3, or 5 in the paper) |
+| `--depth` | number of hidden layers, each with 25 neurons |
 | `--regularizer` | `none`, `l1`, `l2`, `bound_width`, `stable_neuron`, `lp_gap`, `bw+lp` |
-| `--lam` | regularization weight λ (1e-4, 1e-3, or 1e-2 in the paper) |
-| `--seed` | random seed (0–19 in the paper) |
+| `--lam` | regularization weight λ |
+| `--seed` | random seed |
 
 The paper reports means over 20 seeds for each combination. Runs are independent, so the full grid can be parallelized however suits your environment (e.g., a cluster job array). Note that training with 70,000 samples for 200 epochs, and especially the LP-based regularizers, can take a substantial amount of time per run.
 
